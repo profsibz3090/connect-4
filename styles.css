@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.row {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.row h3 {
+    font-size: 3rem;
+}
+
+.score-left, .score-right {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+div.grid {
+    width: 45vw;
+    height: 85vh;
+    background-color: azure;
+    display: grid;
+    grid-template: repeat(6,1fr) / repeat(7,1fr);
+    gap: 1rem;
+    border: 5px solid;
+    padding: 1rem;
+}
+
+.piece {
+    background-color: white;
+    border-radius: 3rem;
+    border: 5px solid;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+   background-color: yellow;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: green;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: white;
+    font-weight: bold;
+    transition: opacity .2s;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+.is-red {
+    color: red;
+}
+
+.is-yellow {
+    color: yellow;
+}
+
+button.reset {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    width: 8rem;
+    height: 3rem;
+}
+
+.left h3 {
+    color: red;
+}
+
+.right h3 {
+    color: yellow;
+}
